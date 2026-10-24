@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bhagwatam Assistant</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Load the JavaScript after the HTML is ready -->
+    <script src="./script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>🪷 Bhagwatam Assistant</h1>
+        <p>Your spiritual companion</p>
+    </header>
+
+    <main>
+        <!-- CHAT SECTION -->
+        <section class="chat-section">
+            <h2>Ask Bhagwatam Assistant</h2>
+
+            <div id="chat-box" aria-live="polite">
+                <p class="bot-message">
+                    Hare Krishna! 🙏 Ask me about love, devotion,
+                    relationships, emotions, Krishna or the
+                    Srimad Bhagavatam.
+                </p>
+            </div>
+
+            <form id="chat-form">
+                <input
+                    type="text"
+                    id="question"
+                    placeholder="Type your question..."
+                    autocomplete="off"
+                    required
+                >
+
+                <button type="submit">Send</button>
+
+                <button
+                    type="button"
+                    id="mic-button"
+                    aria-label="Ask using microphone"
+                >🎤</button>
+            </form>
+
+            <button type="button" id="speak-button">
+                🔊 Read last answer aloud
+            </button>
+        </section>
+
+        <!-- AUDIO LIBRARY -->
+        <section class="audio-section">
+            <h2>🎵 Japa Audio Library</h2>
+            <p>Select a track to listen.</p>
+            <p id="now-playing">No track selected.</p>
+            <p id="status">Audio library ready.</p>
+
+            <div id="audio-list">
+                Loading audio tracks...
+            </div>
+
+            <audio
+                id="audio-player"
+                controls
+                preload="metadata"
+                style="width: 100%;"
+            >
+                Your browser does not support audio playback.
+            </audio>
+        </section>
+    </main>
+
+    <footer>
+        <p>Hare Krishna 🙏 Made with devotion.</p>
+    </footer>
+
+</body>
+</html>
